@@ -1,6 +1,8 @@
 # LandscapeGenerator
 A full Unity project with a simple implementation of procedural terrain generation with rocks and trees.
 
+![Island example](https://github.com/SintLucasAllStars/LandscapeGenerator/raw/master/screenshot.png)
+
 In the [releases](https://github.com/SintLucasAllStars/LandscapeGenerator/releases) there is a Unity Package you can import in your own project with all the content of this project in its own namespace so it doesnt conflict with your scripts from class.
 
 ## Usage
