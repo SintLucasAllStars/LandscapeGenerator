@@ -14,11 +14,15 @@ There is a main camera that looks at the island and a FPSController that automat
 new island is generated.
 
 ## Basic architecture
-### Procedural Manager
+### ProceduralManager
 The center point of the architecture, a Singleton that controls all the procedural generation
 
-### Procedural World
+### ProceduralWorld
 Manages the procedure and all the world data. This is basically a data representation of our world.
+
+#### HeightPass
+This defines a height pass (or octave) on the terrain generation, a heightmap can be generated with as many height passes as desired. Some passes can make mountains, others just small bumps, others a vignette effect to make your terrain an island etc...  
+When the heightmap is generated on the ProceduralWorld all heightpasses will be added to generate the final result.
 
 ### Landscape
 This is a base class to allow subclasses to render our world in different ways. In this project we only have one sub-class
